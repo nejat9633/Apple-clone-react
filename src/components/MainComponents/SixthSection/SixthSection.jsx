@@ -1,5 +1,5 @@
 import React from 'react'
-import arcade from '../../images/icons/arcade.png'
+import arcade from '../../../images/icons/arcade.png'
 import styles from './SixthSection.module.css'
 
 function SixthSection() {

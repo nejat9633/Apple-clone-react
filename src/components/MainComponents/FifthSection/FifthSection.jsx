@@ -1,7 +1,7 @@
 import React from 'react'
-import watch from '../../images/icons/watch-series5-logo.png'
-import banker from '../../images/home/banker.png'
-import tvLogo from "../../images/icons/apple-tv-logo.png"
+import watch from '../../../images/icons/watch-series5-logo.png'
+import banker from '../../../images/home/banker.png'
+import tvLogo from "../../../images/icons/apple-tv-logo.png"
 import styles from './FifthSection.module.css'
 
 function FifthSection() {

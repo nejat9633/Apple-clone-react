@@ -1,5 +1,5 @@
 .second-hightlight-wrapper {
-	background-image: url("../../images/home/macbookair-new-sm.jpg");
+	background-image: url("../../../images/home/macbookair-new-sm.jpg");
 	height: 580px;
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 
 .second-hightlight-wrapper {
 		min-height: 692px;
-		background-image: url("../../images/home/macbookair-new.jpg");
+		background-image: url("../../../images/home/macbookair-new.jpg");
 	}
 	.new-alert {
 		color: #BF4801;

@@ -1,5 +1,5 @@
 .firstHightlightWrapper{
-	background-image: url("../../images/home/ipodPronew-sm.jpg");
+	background-image: url("../../../images/home/ipodPronew-sm.jpg");
 	height: 580px;
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 
 @media (min-width: 768px) {
 .firstHightlightWrapper {
-		background-image: url("../../images/home/ipodPronew.jpg");
+		background-image: url("../../../images/home/ipodPronew.jpg");
 		min-height: 692px;
 	}	
 .ipod-caption {
