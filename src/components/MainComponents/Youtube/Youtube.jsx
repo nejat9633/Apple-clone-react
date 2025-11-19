@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from "react";
 
 function Youtube() {
-  const API_KEY = "AIzaSyCc9CBjki6QZga5_eBFXZoGK5Ii0ZZlV78";
+ const api_key = import.meta.REACT_APP_API_KEY;
   const APPLE_CHANNEL_ID = "UCE_M8A5yxnLfW0KghEeajjw";
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
     fetch(
-      `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${APPLE_CHANNEL_ID}&part=snippet&order=date&maxResults=8`
+      `https://www.googleapis.com/youtube/v3/search?key=${api_key}&channelId=${APPLE_CHANNEL_ID}&part=snippet&order=date&maxResults=8`
     )
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.items) {
-          const youtubeVideos = data.items;
+      .then((res) => res.json())
+         
+      .then((data) => { 
+         const youtubeVideos = data.items;
+        if (youtubeVideos) {
           setVideos(youtubeVideos);
         } else {
           console.error("No video data found!");
         }
       })
-
       .catch((error) => console.error("Error fetching videos: ", error));
   }, []);
 
@@ -49,7 +49,9 @@ function Youtube() {
                   <div className="card-body">
                     <h5 className="card-title"> {singleVideo.snippet.title}</h5>
                     <p className="card-text">
-                      {singleVideo.snippet.description}
+                      {singleVideo.snippet.description +
+                        "  published date: " +
+                        singleVideo.snippet.publishedAt}
                       {/* .substring(0, 100)}... */}
                     </p>
                   </div>

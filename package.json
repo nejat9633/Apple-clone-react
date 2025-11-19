@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "bootstrap": "4.4",
+    "cors": "^2.8.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.6",
     "typeface-montserrat": "^1.1.13"
   },
   "devDependencies": {

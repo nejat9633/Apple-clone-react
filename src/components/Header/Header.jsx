@@ -3,6 +3,7 @@ import logo from '../../images/icons/logo-sm.png'
 import search from "../../images/icons/search-icon-sm.png";
 import cart from "../../images/icons/cart-sm.png";
 import styles from './Header.module.css'
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -19,56 +20,56 @@ function Header() {
           >
             ☰
           </button>
-          <a className="navbar-brand mx-auto" href="#">
+          <Link className="navbar-brand mx-auto" to="/">
             <img src={logo} />
-          </a>
+          </Link>
 
           <div className="navbar-collapse collapse">
             <ul className="navbar-nav nav-justified w-100 nav-fill">
               <li className={`${styles["nav-item"]} nav-item `}>
-                <a className="nav-link js-scroll-trigger" href="/mac/">
+                <Link className="nav-link js-scroll-trigger" to="/mac/">
                   Mac
-                </a>
+                </Link>
               </li>
               <li className={`${styles["nav-item"]} nav-item `}>
-                <a className="nav-link js-scroll-trigger" href="#">
+                <Link className="nav-link js-scroll-trigger" to="/iphone">
                   iphone
-                </a>
+                </Link>
               </li>
               <li className={`${styles["nav-item"]} nav-item `}>
-                <a className="nav-link js-scroll-trigger" href="#">
+                <Link className="nav-link js-scroll-trigger" to="#">
                   ipad
-                </a>
+                </Link>
               </li>
               <li className={`${styles["nav-item"]} nav-item `}>
-                <a className="nav-link js-scroll-trigger" href="#">
+                <Link className="nav-link js-scroll-trigger" to="#">
                   watch
-                </a>
+                </Link>
               </li>
               <li className={`${styles["nav-item"]} nav-item `}>
-                <a className="nav-link js-scroll-trigger" href="#">
+                <Link className="nav-link js-scroll-trigger" to="#">
                   tv
-                </a>
+                </Link>
               </li>
               <li className={`${styles["nav-item"]} nav-item `}>
-                <a className="nav-link js-scroll-trigger" href="#">
+                <Link className="nav-link js-scroll-trigger" href="#">
                   Music
-                </a>
+                </Link>
               </li>
               <li className={`${styles["nav-item"]} nav-item `}>
-                <a className="nav-link js-scroll-trigger" href="#">
+               <Link className="nav-link js-scroll-trigger" href="#">
                   Support
-                </a>
+                </Link>
               </li>
               <li className={`${styles["nav-item"]} nav-item `}>
-                <a className="nav-link js-scroll-trigger" href="/search/">
+               <Link className="nav-link js-scroll-trigger" to="/search/">
                   <img src={search} />
-                </a>
+                </Link>
               </li>
               <li className={`${styles["nav-item"]} nav-item `}>
-                <a className="nav-link js-scroll-trigger" href="/cart/">
+                <Link className="nav-link js-scroll-trigger" to="/cart/">
                   <img src={cart} />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
