@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from "react";
 
 function Youtube() {
- const api_key = import.meta.REACT_APP_API_KEY;
-  const APPLE_CHANNEL_ID = "UCE_M8A5yxnLfW0KghEeajjw";
+//  const api_key = import.meta.env.VITE_API_KEY;
+
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
+    const api_key = import.meta.env.VITE_API_KEY;
+
+    const APPLE_CHANNEL_ID = "UCE_M8A5yxnLfW0KghEeajjw";
     fetch(
       `https://www.googleapis.com/youtube/v3/search?key=${api_key}&channelId=${APPLE_CHANNEL_ID}&part=snippet&order=date&maxResults=8`
     )
+    
       .then((res) => res.json())
-         
-      .then((data) => { 
-         const youtubeVideos = data.items;
+
+      .then((data) => {
+        const youtubeVideos = data.items;
         if (youtubeVideos) {
           setVideos(youtubeVideos);
         } else {
