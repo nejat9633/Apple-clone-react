@@ -7,9 +7,11 @@ import {Routes, Route} from 'react-router-dom'
 import NotFound from "./components/MainComponents/NotFound";
 import SharedLayout from "./components/SharedLayout";
 import Iphone from "./components/MainComponents/Iphones/Iphone";
+import IphoneDetail from "./components/MainComponents/Iphones/IphoneDetail";
 
 
 function App() {
+
   return (
     <>
 
@@ -25,7 +27,7 @@ function App() {
         <Route path="/support" element={<>Support</>} />
         <Route path="/support" element={<>Support</>} />
         <Route path="*" element={<NotFound/>} />
-
+<Route path="/iphone/:id" element={<IphoneDetail/>}/>
         </Route>
        
       </Routes>

@@ -11,7 +11,7 @@ function Header() {
     <div className={`fixed-top ${styles["nav-wrapper"]}`}>
       <div className="container">
         <nav className="navbar navbar-expand-md navbar-toggleable-sm ">
-          {/* <nav className="navbar navbar-expand-md"> */}
+         
           <button
             className="navbar-toggler navbar-toggler-right white"
             type="button"
@@ -27,7 +27,7 @@ function Header() {
           <div className="navbar-collapse collapse">
             <ul className="navbar-nav nav-justified w-100 nav-fill">
               <li className={`${styles["nav-item"]} nav-item `}>
-                <Link className="nav-link js-scroll-trigger" to="/mac/">
+                <Link className="nav-link js-scroll-trigger" to="#">
                   Mac
                 </Link>
               </li>
